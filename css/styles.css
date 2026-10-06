@@ -220,11 +220,12 @@ em {
   display: none;
   align-items: center;
   gap: 0.15rem;
+  font-weight: bold;
 }
 
 .nav-links a {
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 700;
   color: hsl(var(--muted-foreground));
   padding: 0.5rem 0.75rem;
   border-radius: 0.5rem;
@@ -410,6 +411,7 @@ html:not(.dark) .theme-toggle .icon-sun {
 
 .hero-title-line {
   display: block;
+  letter-spacing: 0.07em;
 }
 
 .hero-role {
@@ -426,6 +428,7 @@ html:not(.dark) .theme-toggle .icon-sun {
   font-size: clamp(0.98rem, 2vw, 1.1rem);
   max-width: 38rem;
   margin: 0 auto 2rem;
+  justify-content: space-around;
 }
 
 .hero-ctas {
@@ -577,8 +580,8 @@ html:not(.dark) .theme-toggle .icon-sun {
 /* About */
 .about-grid {
   display: grid;
-  gap: 1.25rem;
-  margin-bottom: 1.5rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 960px) {
@@ -590,7 +593,15 @@ html:not(.dark) .theme-toggle .icon-sun {
 }
 
 .about-copy {
-  padding: 1.5rem;
+  padding: 2rem;
+}
+
+#about-data{
+  font-weight: 500;
+  font-size: 1.3rem;
+  max-width: 50rem;
+  margin: 0 auto 1rem;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -644,6 +655,7 @@ html:not(.dark) .theme-toggle .icon-sun {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0.85rem;
+  justify-content: center;
 }
 
 @media (min-width: 700px) {
@@ -654,7 +666,7 @@ html:not(.dark) .theme-toggle .icon-sun {
 
 @media (min-width: 1100px) {
   .focus-grid {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -858,7 +870,9 @@ html:not(.dark) .theme-toggle .icon-sun {
   display: flex;
   flex-wrap: wrap;
   gap: 0.55rem;
-  margin-bottom: 1.25rem;
+  margin-top: 1.5rem;
+  /* margin-bottom: 0.6rem; */
+
 }
 
 .exp-tags span {
@@ -873,15 +887,15 @@ html:not(.dark) .theme-toggle .icon-sun {
   border: 1px solid hsl(var(--secondary) / 0.22);
 }
 
-.exp-tags span:last-child {
+/* .exp-tags span:last-child {
   background: hsl(var(--accent) / 0.12);
   color: hsl(var(--accent));
   border-color: hsl(var(--accent) / 0.25);
-}
+} */
 
-.dark .exp-tags span:last-child {
+/* .dark .exp-tags span:last-child {
   color: hsl(210 58% 78%);
-}
+} */
 
 .exp-points {
   display: grid;
